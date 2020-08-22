@@ -1,4 +1,4 @@
-# IsingSimEUI
+# IsingSimEUI.jl
 Interactive Ising Model Simulator with Julia and Electron.
 + Requirements: Julia/REPL, Electron.jl
 
