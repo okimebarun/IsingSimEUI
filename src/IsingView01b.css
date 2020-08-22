@@ -1,0 +1,22 @@
+.canvas-left {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.canvas-right {
+  float: right;
+  width: 50%;
+  text-align: center;
+}
+.slider-wrapper fieldset {
+  width: 480px;
+}
+.slider-wrapper input {
+  width: 350px;
+  height: 10px;
+  margin: 0;
+}
+.ctlbutton input {
+  width: 150px;
+  height: 40px;
+}

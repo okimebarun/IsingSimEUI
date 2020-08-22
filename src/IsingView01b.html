@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>IsingSim View 1.0</title>
+    <link rel="stylesheet" href="./IsingView01b.css">
+	<script src="./IsingView01b.js"></script>
+</head>
+<body>
+ <div class="slider-wrapper">
+ <fieldset>
+ <legend>Control</legend>
+ <p>
+ <div class="ctlbutton">
+	 <input type="button" value="start" onclick="animator.start()"></input>
+	 <input type="button" value="stop"  onclick="animator.stop()"></input>
+ </div>
+ </p>
+ <p>
+ <input id="range01" type="range" value="1" min="0.05" max="8" step="0.05" size="400"
+  oninput="slider01changed(this.value)" />
+ <label id="lrange01" for="temp">T=</label>
+ <input id="range02" type="range" value="0" min="-1" max="1" step="0.1" size="400"
+  oninput="slider02changed(this.value)" />
+ <label id="lrange02" for="temp">H=</label>
+ </p> 
+ </fieldset>
+ </div>
+
+ <div class="canvas-left">
+	 <fieldset>
+	 <legend>Spin State</legend>
+	 <canvas id="myCanvas01" width="400" height="400" style="background-color:black;"></canvas>
+	 </fieldset>
+ </div>
+ <div class="canvas-right">
+	 <fieldset>
+	 <legend>BH Curve</legend>
+	 <canvas id="myCanvas02" width="400" height="400" style="background-color:black;"></canvas>
+	 </fieldset>
+ </div>
+</body>
+</html>
